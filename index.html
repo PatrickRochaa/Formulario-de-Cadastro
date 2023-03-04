@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário</title>
+
+     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
+
+    
+     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Inter:wght@200;500&family=Merriweather:wght@300&family=Poppins:wght@400;500&family=Sriracha&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="estilos/style.css">
+    <link rel="stylesheet" href="estilos/media-query.css">
+</head>
+<body>
+   <main>
+        <section>
+           <form action="" method="post" autocomplete="on">
+            <fieldset class="total"><legend>Formulário de Cadastro</legend>
+                <fieldset class="usuario">
+                        <legend>Identificação do Usuário</legend>
+
+                    <p>
+                        <label for="cNome" class="teste">Nome Completo&nbsp;</label> 
+                        <input type="text" name="tNome" id="cNome" size="20" maxlength="30" required class="inputUser">
+                    </p>               
+
+                    <p>
+                        <label for="cEmail" class="teste">E-mail&nbsp;&nbsp;</label>
+                        <input type="email" name="tEmail" id="cEmail" size="20" maxlength="20" required >
+                    </p>
+
+                    <p>
+                        <label for="cSenha" class="teste">Senha&nbsp;&nbsp;</label>
+                        <input type="password" name="tSenha" id="cSenha" size="10" maxlength="10" required >
+                    </p>
+
+                    <p>
+                        <label for="cTel">Telefone &nbsp;&nbsp;</label>
+                        <input type="tel" name="tTel" id="cTel" size="10" maxlength="10" required >
+                    </p>
+
+                    <fieldset class="sexo">
+                        <legend>Sexo:&nbsp;</legend>
+
+                        <p>
+                            <input type="radio" name="tSexo" id="cFem">&nbsp; <label for="cFem">Feminino</label>
+                        </p>
+
+                        <p>
+                            <input type="radio" name="tSexo" id="cMasc">&nbsp; <label for="cMasc">Masculino</label><br>
+                        </p>
+
+                       
+                    </fieldset>
+
+                    <p>                            
+                        <label for="cData">Data de Nascimento:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
+                        <input type="date" name="tData" id="cData">
+                    </p>
+
+                </fieldset>
+
+            
+                <fieldset class="endereco">
+                    <legend>Endereço do Usuário</legend>
+                    <p>
+                        <label for="cRua">Logradouro:&nbsp;</label>
+                        <input type="tex" name="tRua" id="cRua" size="40" maxlength="50" class="rua">
+                      
+                    </p>
+
+                    <p>
+
+                        <label for="cCid">Cidade:&nbsp;</label>
+                        <input type="text" name="tCid" id="cCid" size="25" maxlength="40" class="cidade">
+
+
+                        <label for="cNum">&nbsp;&nbsp;&nbsp;Número:&nbsp;</label>
+                        <input type="number" name="tNum" id="cNum" min="0" max="99999" class="numero">
+                    </p>
+                    
+                    <p>   
+                        <label for="cEst">Estado:&nbsp;&nbsp;</label>
+                        <input type="text" name="tEst" id="cEst" size="25" maxlength="40" class="estado">
+                       
+                    </p>
+                </fieldset>
+                <input type="submit" value="Enviar">
+            </fieldset>
+           </form>
+        </section>
+
+   </main>
+     
+</body>
+</html>

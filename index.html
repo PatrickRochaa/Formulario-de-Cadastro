@@ -5,96 +5,57 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
-
-     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-
-    
-     <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Courgette&family=Inter:wght@200;500&family=Merriweather:wght@300&family=Poppins:wght@400;500&family=Sriracha&display=swap" rel="stylesheet">
-
     <link rel="stylesheet" href="estilos/style.css">
-    <link rel="stylesheet" href="estilos/media-query.css">
 </head>
 <body>
-   <main>
-        <section>
-           <form action="" method="post" autocomplete="on">
-            <fieldset class="total"><legend>Formulário de Cadastro</legend>
-                <fieldset class="usuario">
-                        <legend>Identificação do Usuário</legend>
+    <section class="box">
+        <form action="">
+            <fieldset>
+                <legend><strong>Formulário de Cadastro</strong></legend><br>
+                <div class="inputBox">
+                    <input type="text" name="nome" id="nome" class="inputUser" required>
+                    <label for="nome" class="labelInput">Nome Completo</label>
+                </div><br>
 
-                    <div class="nome">
-                        <label for="cNome" class="teste">Nome Completo&nbsp;</label> 
-                        <input type="text" name="tNome" id="cNome" size="20" maxlength="30" required class="inputUser">
-                    </div>               
+                <div class="inputBox">
+                    <input type="text" name="email" id="email" class="inputUser" required>
+                    <label for="email" class="labelInput">Email</label>
+                </div><br>
 
-                    <div class="email">
-                        <label for="cEmail" class="teste">E-mail&nbsp;&nbsp;</label>
-                        <input type="email" name="tEmail" id="cEmail" size="20" maxlength="20" required >
-                    </div>
+                <div class="inputBox">
+                    <input type="tel" name="telefone" id="telefone" class="inputUser" required>
+                    <label for="telefone"class="labelInput">Telefone</label>
+                </div>
+                <p>Sexo</p>
+                <input type="radio" name="genero" value="feminino" id="feminino"  required>
+                <label for="feminino">Feminino</label><br>
 
-                    <div class="senha">
-                        <label for="cSenha" class="teste">Senha&nbsp;&nbsp;</label>
-                        <input type="password" name="tSenha" id="cSenha" size="10" maxlength="10" required >
-                    </div>
+                <input type="radio" name="genero" value="masculino" id="masculino" required>
+                <label for="masculino">Masculino</label><br><br>
 
-                    <div class="tel">
-                        <label for="cTel">Telefone &nbsp;&nbsp;</label>
-                        <input type="tel" name="tTel" id="cTel" size="10" maxlength="10" required >
-                    </div>
+               
+                    <label for="ano_nascimento"><strong>Data de Nascimento</strong></label>
+                    <input type="date" name="ano_nascimento" id="ano_nascimento"  required>
+                <br>
 
-                    <fieldset class="sexo">
-                        <legend>Sexo:&nbsp;</legend>
+                <div class="inputBox">
+                    <input type="cidade" id="cidade" class="inputUser" required>
+                    <label for="cidade" class="labelInput">Cidade</label>
+                </div><br>
 
-                        <p>
-                            <input type="radio" name="tSexo" id="cFem">&nbsp; <label for="cFem">Feminino</label>
-                        </p>
+                <div class="inputBox">
+                    <input type="text" name="estado" id="estado" class="inputUser" required>
+                    <label for="estado" class="labelInput">Estado</label>
+                </div><br>               
 
-                        <p>
-                            <input type="radio" name="tSexo" id="cMasc">&nbsp; <label for="cMasc">Masculino</label><br>
-                        </p>
+                <div class="inputBox">
+                    <input type="text" name="endereco" id="endereco" class="inputUser" required>
+                    <label for="endereco" class="labelInput">Endereço</label>
+                </div> <br>
 
-                       
-                    </fieldset>
-
-                    <div class="data">                            
-                        <label for="cData">Data de Nascimento:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</label>
-                        <input type="date" name="tData" id="cData">
-                    </div>
-
-                </fieldset>
-
-            
-                <fieldset class="endereco">
-                    <legend>Endereço do Usuário</legend>
-                    <div class="rua">
-                        <label for="cRua">Logradouro:&nbsp;</label>
-                        <input type="tex" name="tRua" id="cRua" size="40" maxlength="50" class="rua">
-                      
-                    </div>
-
-                    <div class="cidade">
-
-                        <label for="cCid">Cidade:&nbsp;</label>
-                        <input type="text" name="tCid" id="cCid" size="25" maxlength="40" class="cidade">
-                    </div>
-
-                    <div class="numero">
-                        <label for="cNum">Número:&nbsp;</label>
-                        <input type="number" name="tNum" id="cNum" min="0" max="99999" class="numero">
-                    </div>
-                    
-                    <div class="estado">   
-                        <label for="cEst">Estado:&nbsp;&nbsp;</label>
-                        <input type="text" name="tEst" id="cEst" size="25" maxlength="40" class="estado">
-                       
-                    </div>
-                </fieldset>
-                <input type="submit" value="Enviar">
+                <input type="submit" name="submit" id="submit">
             </fieldset>
-           </form>
-        </section>
-
-   </main>
-     
+        </form>
+    </section>
 </body>
 </html>

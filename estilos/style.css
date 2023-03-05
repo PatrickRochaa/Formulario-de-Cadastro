@@ -1,194 +1,89 @@
-@chaset "UTF8";
-
-*{
-    padding:0;
-    margin:0;
-    box-sizing: border-box;
-}
 
 body{
-    width: 100vw;
-    height: 100vh;
-    
-    margin-top:10px;
-
-    background-color: darkred;
-    
-}
-
-main{
-    width: 90vw;
-    margin-top: 5px;
-    height: 604px;
-    margin:auto;
-    display: block;
-
+    font-family: Arial, Helvetica, sans-serif;
     /*
+    background-image: linear-gradient(to right,  rgb(17, 54, 71), rgb(202, 17, 17), rgb(17, 54, 71));
+    */
+
+    background-color: rgb(17, 54, 71);
+}
+
+.box{
     position: absolute;
-    top:50%;
-    left: 50%;
-    transform: translate(-50% ,-50%);
-   */
-    background-color: aqua;
-  
-}
-
-section{
-    background-color: rgb(32, 32, 32);
-    padding: 10px;
-    margin-top: 5px;
-    height: 580px;
-    border-radius: 8px;
-}
-
-fieldset.total{
     color: white;
-    margin-bottom: 10px;
-    border: 1px solid red;
+    left:50%;
+    top:50%;
+    padding: 15px;
+    border-radius: 15px;
+    width: 70%;
+    transform: translate(-50%,-50%);
+    background-color: rgba(0, 0, 0, 0.8);
 }
 
-fieldset.total > legend{
+fieldset{
+    border: 3px solid rgb(202, 17, 17);
+}
+
+legend{
+    border: 1px solid rgb(202, 17, 17);
+    padding: 10px;
     text-align: center;
-    margin: 5px;
-    padding: 5px;
-    border-radius: 5px;    
-    background-color: red;     
+    background-color: rgb(202, 17, 17);
+    border-radius: 5px;
+    
 }
 
-fieldset.total > input{
-    background-color: red;   
-    display: block;
-    margin: auto;
-    padding:10px;
-    width: 99%;
-    border-radius: 8px;
-    color:white;
-    font-size:1.2em;
+.inputBox{
+    position: relative;
+}
+
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 1.3em;
+    width: 100%;
+    letter-spacing: 1px;
+    margin-bottom: 15px;
+}
+
+.labelInput{
+    position: absolute;
+    top:0px;
+    left:0px;
+    pointer-events: none;
+    transition: 0.5s;
+}
+
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top:-20px;
+    font-size: 1em;
+    color: rgb(202, 17, 17);
+}
+
+#ano_nascimento{
     border:none;
-    margin-bottom: 10px;
-}
-
-fieldset.usuario {
-
-    width: 95%;
-    margin: auto;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid white;
-    
-
-}
-
-fieldset.usuario > legend{
-    margin-left: 20px;
-    margin-bottom: 10px;
-}
-
-fieldset.usuario > div.nome{
-   
-    margin-bottom: 5px;
-}
-
-fieldset.usuario > div.nome > input{
-    width: 100%;
-}
-
-fieldset.usuario > div.email{ 
-    
-    margin-bottom: 10px;
-}
-
-fieldset.usuario > div.email> input{
-    width: 100%;
-}
-
-fieldset.usuario > div.senha{ 
-    
-    margin-bottom: 10px;
-    display: block;
-    width: 160px;
-    float: left;
-}
-
-
-fieldset.usuario > div.senha> input{
-    width: 60%;
-}
-
-fieldset.usuario > div.tel{ 
-    
-    margin-bottom: 10px;
-    display: block;
-    width: 205px;
-    float: right;
-    padding-left: 6px;
-    margin-top:3px;
-}
-
-fieldset.usuario > div.tel> input{
-    width: 63%;
-}
-fieldset.sexo{
-    width: 60%;
-    margin: auto;
-    padding: 10px;
+    padding:8px;
+    border-radius: 10px;
+    outline: none;
     margin-bottom: 15px;
-    border: 1px solid white;
+    text-align: center;
 }
 
-fieldset.sexo > p{
-    margin-left: 10px;
-}
-
-
-fieldset.endereco{
-    width: 90%;
-    margin: auto;
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid white;
-}
-
-fieldset.endereco > div.rua{
-    
-    margin-bottom: 10px;
-}
-
-fieldset.endereco > div.rua > input{
+#submit{
+    background-color: rgb(202, 17, 17);
     width: 100%;
-   
-   }
-
-fieldset.endereco > div.cidade{
-    
-     margin-bottom: 10px;
+    padding: 15px;
+    border: none;
+    color: white;
+    font-size: 1.2em;
+    border-radius: 8px;
+    cursor:pointer
 }
 
-fieldset.endereco > div.cidade > input{
- width: 100%;
-
-}
-
-fieldset.endereco > div.numero{
-    
-    width: 50%;
-    margin-bottom: 10px;
-    display: block;
-    float: left;
-}
- 
-fieldset.endereco > div.numero > input{
-    width: 50%;
-}
-
-fieldset.endereco > div.estado{
-    
-    margin-bottom: 10px;
-    display: block;
-    float: right;
-    width: 50%;
-} 
-
-fieldset.endereco > div.estado > input{
-    width: 61%;
+#submit:hover{
+    background-color: rgb(175, 21, 21);
 }

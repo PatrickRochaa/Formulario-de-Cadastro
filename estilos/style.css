@@ -1,254 +1,195 @@
-@charset "UTF-8";
+@chaset "UTF8";
 
 *{
-   
-    padding: 0px;
-    margin: 0px;
+    padding:0;
+    margin:0;
     box-sizing: border-box;
 }
 
 body{
-    font-family: 'Poppins', sans-serif;
     width: 100vw;
     height: 100vh;
     
-    /*
-    display: flex;    
-    justify-content: center;
-    align-items: center;
-    padding-top: 100px;
-    */
+    margin-top:10px;
 
-    background-image: linear-gradient(to right, #000000, #6d1207, #000000);
-    /*background-color: rgb(2, 27, 97);*/
+    background-color: darkred;
     
-
 }
 
 main{
-    
     width: 90vw;
-    height: 790px;
     padding: 10px;
-    padding-top: 30px;
-    padding-bottom: 50px;
+    margin-top: 5px;
+    height: 604px;
+    margin:auto;
+    display: block;
+
+    /*
     position: absolute;
+    top:50%;
     left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50% ,-50%);
+   
+    background-color: aqua;
+  */
 }
 
 section{
-   
-    
-    width: 95%;
-    height: 740px;
-    border-radius: 8px;
+    background-color: rgb(32, 32, 32);
     padding: 10px;
-    
-    margin-top: 50px;
-    margin:auto;
-    background-color: #171717;
-
-    /*position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);*/
+    margin-top: 5px;
+    height: 580px;
+    border-radius: 8px;
 }
 
 fieldset.total{
-    text-align: center;
-    padding: 20px;
-    margin: 10px;
-    height: 100%;    
-    border: 3px solid red;
+    color: white;
+    margin-bottom: 10px;
+    border: 1px solid red;
 }
 
 fieldset.total > legend{
-    font-size: 1.2em;
-    font-weight: normal;
-    color:white;
-    padding: 10px;
-    border-radius: 8px;    
-    background-color: red;
-    text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.74);
+    text-align: center;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 5px;    
+    background-color: red;     
 }
 
 fieldset.total > input{
-    background-color: red;
-    padding: 10px;
-    margin-top:15px;
-    margin-left:0px;
-    border: none;
-    width: 100%; 
-    text-transform: uppercase;
-    color: white;
-    font-weight: bolder;
-    font-size: 1.3em;
+    background-color: red;   
+    display: block;
+    margin: auto;
+    padding:10px;
+    width: 99%;
     border-radius: 8px;
-    cursor: pointer;
+    color:white;
+    font-size:1.2em;
+    border:none;
+    margin-bottom: 10px;
 }
 
-fieldset.total > input:hover{
-    background-color: black;
-    color: red;
-    border: 1px solid rgb(250, 247, 247);
-}
-fieldset.usuario{
-    text-align: left;
-    padding: 20px;
+fieldset.usuario {
+
+    width: 95%;
+    margin: auto;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid white;
+    
+
 }
 
 fieldset.usuario > legend{
-    font-weight: normal;
-    color: white;
-    padding:10px;
-
-}
-
-fieldset.usuario > p {
-    color:white;
-}
-
-fieldset.usuario  input[type=text]{
-    width: 62%; 
+    margin-left: 20px;
     margin-bottom: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    letter-spacing: 1px;
-    background-color: white;   
-
 }
 
-fieldset.usuario  input[type=date]{
-    padding: 5px;
-    width: 130px;
-    text-align: center;
-    border: none;
-    border-radius: 8px;
-    border: none;
-    background-color: white; 
+fieldset.usuario > div.nome{
+   
+    margin-bottom: 5px;
 }
 
-input[type=password]{
-    width: 80%;   
+fieldset.usuario > div.nome > input{
+    width: 100%;
+}
+
+fieldset.usuario > div.email{ 
+    
     margin-bottom: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    letter-spacing: 1px;
-    background-color: white;    
 }
-input[type=email]{
-    width: 80%;   
+
+fieldset.usuario > div.email> input{
+    width: 100%;
+}
+
+fieldset.usuario > div.senha{ 
+    
     margin-bottom: 10px;
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    letter-spacing: 1px;
-    background-color: white;    
+    display: block;
+    width: 160px;
+    float: left;
 }
 
-input[type=tel]{
-    width: 75%;   
-    margin-bottom: 10px; 
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    letter-spacing: 1px;
-    background-color: white;    
+
+fieldset.usuario > div.senha> input{
+    width: 60%;
 }
 
-fieldset.sexo {
-    text-align: left;
-    color: white;
-    padding:10px;
-    font-size:1.1em;
+fieldset.usuario > div.tel{ 
+    
+    margin-bottom: 10px;
+    display: block;
+    width: 205px;
+    float: right;
+    padding-left: 6px;
+    margin-top:3px;
+}
+
+fieldset.usuario > div.tel> input{
+    width: 63%;
+}
+fieldset.sexo{
+    width: 60%;
+    margin: auto;
     padding: 10px;
-    width: 80%;
-    margin-left: 30px;
-    margin-bottom: 10px;
-    margin-top: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
 }
 
-fieldset.sexo > legend{
-    font-weight: normal;
-    color: white;
+fieldset.sexo > p{
+    margin-left: 10px;
 }
 
-fieldset.sexo > P{
-    margin-left: 30px;
-}
 
 fieldset.endereco{
-    text-align: left;
+    width: 90%;
+    margin: auto;
     padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid white;
 }
 
-fieldset.endereco > label{
-    margin: 10px;
-   
-}
-
-fieldset.endereco > legend{
-    font-weight: normal;
-    color: white;
-    padding:10px;
-}
-
-fieldset.endereco > P{
-    color: white;
+fieldset.endereco > div.rua{
+    
     margin-bottom: 10px;
 }
 
-fieldset.endereco  input.rua{
-
- width: 73%;
- font-size: 1em;
- border-radius: 5px;
- border: none;
- letter-spacing: 1px;
- background-color: white;   
-}
-
-fieldset.endereco  input.cidade{
-    width: 81%;
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    letter-spacing: 1px;
-    background-color: white;   
-}
-
-fieldset.endereco  input.numero{
-    width: 80%;
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    letter-spacing: 1px;
-    background-color: white;   
-}
-
-fieldset.endereco  input.estado{
-    color: white;
-    width: 82%;
-    font-size: 1em;
-    border-radius: 5px;
-    border: none;
-    letter-spacing: 1px;
-    background-color: white;   
-}
-/*
-
-section{
+fieldset.endereco > div.rua > input{
+    width: 100%;
    
-    width: 600px;
-    height: 600px;
-    background-color: rgb(247, 244, 244);
-    border-radius: 8px;
-    padding: 10px;
+   }
+
+fieldset.endereco > div.cidade{
     
+     margin-bottom: 10px;
 }
 
-*/
+fieldset.endereco > div.cidade > input{
+ width: 100%;
+
+}
+
+fieldset.endereco > div.numero{
+    
+    width: 50%;
+    margin-bottom: 10px;
+    display: block;
+    float: left;
+}
+ 
+fieldset.endereco > div.numero > input{
+    width: 50%;
+}
+
+fieldset.endereco > div.estado{
+    
+    margin-bottom: 10px;
+    display: block;
+    float: right;
+    width: 50%;
+} 
+
+fieldset.endereco > div.estado > input{
+    width: 61%;
+}

@@ -14,7 +14,7 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 20px;
+    padding-top: 100px;
 
     background-image: linear-gradient(to right, #000000, #6d1207, #000000);
     /*background-color: rgb(2, 27, 97);*/
@@ -22,14 +22,31 @@ body{
 
 }
 
+main{
+    background-color: green;
+    width: 90vw;
+    height: 740px;
+    padding: 10px;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
 
 section{
    
+    top:100px;
     width: 95%;
-    height: 710px;
+    height: 730px;
     border-radius: 8px;
     padding: 10px;
+    margin:auto;
     background-color: #171717;
+
+    /*position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);*/
 }
 
 fieldset.total{
@@ -189,7 +206,7 @@ fieldset.endereco  input.rua{
 }
 
 fieldset.endereco  input.cidade{
-    width: 40%;
+    width: 81%;
     font-size: 1em;
     border-radius: 5px;
     border: none;
@@ -198,6 +215,7 @@ fieldset.endereco  input.cidade{
 }
 
 fieldset.endereco  input.numero{
+    width: 80%;
     font-size: 1em;
     border-radius: 5px;
     border: none;
@@ -207,6 +225,7 @@ fieldset.endereco  input.numero{
 
 fieldset.endereco  input.estado{
     color: white;
+    width: 82%;
     font-size: 1em;
     border-radius: 5px;
     border: none;
